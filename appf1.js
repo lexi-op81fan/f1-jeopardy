@@ -79,7 +79,7 @@ const jeopardyCategories = [
             {
                 question: 'What was the shortesst Formula 1 race?',
                 answers: ['1991 Australian Grand Prix', '1975 Spanish Grand Prix', '2009 Malaysia Grand Prix', '2021 Belgian Grand Prix'],
-                correct: '2021 Belgian Grand Prix',
+                correct: '2021 Belgian Grand Prix', 
                 level: 'sort of difficult'
             },
             {
@@ -123,3 +123,19 @@ const jeopardyCategories = [
         ]
     }
 ];
+
+
+function addCategory(category) {
+    const column = document.createElement('div')
+    column.classList.add('genrecolumn')
+
+    const genreTitle = document.createElement('div')
+    genreTitle.classList.add('genre-title')
+    genreTitle.innertext = category.genre
+
+    column.append(genreTitle)
+    game.append(column)
+    
+}
+
+jeopardyCategories.forEach(category => addCategory(category))

@@ -126,16 +126,39 @@ const jeopardyCategories = [
 
 
 function addCategory(category) {
-    const column = document.createElement('div')
-    column.classList.add('genrecolumn')
+    const column = document.createElement('div');
+    column.classList.add('genrecolumn');
 
-    const genreTitle = document.createElement('div')
-    genreTitle.classList.add('genre-title')
-    genreTitle.innerText = category.genre
+    const genreTitle = document.createElement('div');
+    genreTitle.classList.add('genre-title');
+    genreTitle.innerHTML = category.genre;
 
-    column.append(genreTitle)
-    gamef1.append(column)
+    column.append(genreTitle);
+    gamef1.append(column);
+
+    category.questions.forEach(question => {
+        document.createElement('div');
+        card.classList.add(card);
+        column.append('card');
+
+        if (question.level === 'easy') {
+            card.innerHTML = 100
+        }
+       
+        if (question.level === 'medium') {
+            card.innerHTML = 200
+        }
+        
+        if (question.level === 'sort of difficult') {
+            card.innerHTML = 300
+        }
+        
+        if (question.level === 'hard') {
+            card.innerHTML = 400
+        }
+    })
+
     
-}
+};
 
 jeopardyCategories.forEach(category => addCategory(category))

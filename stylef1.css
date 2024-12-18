@@ -3,16 +3,33 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(46,46,46);
+    background-color: rgb(142,139,193);
     color: rgb(255,255,255);
     display:flex;
     justify-content: center;
-    align-items: venter;
+    align-items: center;
     flex-direction: column;
      font-family: "Arvo", serif;
 }
 
-#game {
-    background-color: rgb(6,12,233);
+#gamef1 {
+    background-color: rgb(32,32,32);
     display: flex;
+}
+
+.card{
+    width: 160px;
+    height: 120px;
+    background-color: rgb(6,12,233);
+    border-left: solid rgb(19,19,160) 10px;
+    border-right: solid rgb(11,11,91) 10px;
+    border-top: solid rgb(1,61,200) 10px;
+    border-bottom: solid rgb(20,20,89) 10px;
+    text-align: center;
+    font-size: 100px;
+    margin: 5px;
+    padding: 5px;
+    line-height: 120px;
+
+
 }

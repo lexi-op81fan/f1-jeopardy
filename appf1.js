@@ -131,7 +131,7 @@ function addCategory(category) {
 
     const genreTitle = document.createElement('div')
     genreTitle.classList.add('genre-title')
-    genreTitle.innertext = category.genre
+    genreTitle.innerText = category.genre
 
     column.append(genreTitle)
     gamef1.append(column)

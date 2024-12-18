@@ -1,4 +1,4 @@
-const game = document.getElementById('game');
+const gamef1 = document.getElementById('gamef1');
 const scoreDisplay = document.getElementById('score');
 
 const jeopardyCategories = [
@@ -134,7 +134,7 @@ function addCategory(category) {
     genreTitle.innertext = category.genre
 
     column.append(genreTitle)
-    game.append(column)
+    gamef1.append(column)
     
 }
 

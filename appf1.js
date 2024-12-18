@@ -65,9 +65,9 @@ const jeopardyCategories = [
         genre: 'Race History',
         questions: [
             {
-                question: ' ',
-                answers: [' ', ' ', ' ', ' '],
-                correct: ' ',
+                question: 'What is the shortest current Formula 1 track?',
+                answers: ['Interlagos Circuit', 'Autódromo Hermanos Rodríguez', 'Red Bull Ring', 'Circuit de Monaco'],
+                correct: 'Circuit de Monaco',
                 level: 'easy'
             },
             {
@@ -77,13 +77,13 @@ const jeopardyCategories = [
                 level: 'medium'
             },
             {
-                question: 'Which recently added Formula One track has the most pedestrian bridges of any track?',
-                answers: ['Suzuka Circuit', 'Las Vegas Strip Circuit', 'Autodromo Nazionale di Monza', 'Miami International Autodrome'],
-                correct: 'Miami International Autodrome',
+                question: 'What was the shortesst Formula 1 race?',
+                answers: ['1991 Australian Grand Prix', '1975 Spanish Grand Prix', '2009 Malaysia Grand Prix', '2021 Belgian Grand Prix'],
+                correct: '2021 Belgian Grand Prix',
                 level: 'sort of difficult'
             },
             {
-                question: 'Who won the first ever f1 race?',
+                question: 'Who won the first ever Formula 1 race?',
                 answers: ['George Grignard', 'Juan Manuel Fangio', 'Luigi Fagioli', 'Nino Farina'],
                 correct: 'Nino Farina',
                 level: 'hard'

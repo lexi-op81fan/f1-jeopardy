@@ -20,13 +20,13 @@ body {
 .card{
     width: 160px;
     height: 120px;
-    background-color: rgb(6,12,233);
-    border-left: solid rgb(19,19,160) 10px;
-    border-right: solid rgb(11,11,91) 10px;
+    background-color: rgb(68,127,255);
+    border-left: solid rgb(61,116,233) 10px;
+    border-right: solid rgb(37,87,196) 10px;
     border-top: solid rgb(1,61,200) 10px;
-    border-bottom: solid rgb(20,20,89) 10px;
+    border-bottom: solid rgb(31,31,135) 10px;
     text-align: center;
-    font-size: 100px;
+    font-size: 50px;
     margin: 5px;
     padding: 5px;
     line-height: 120px;

@@ -77,7 +77,7 @@ const jeopardyCategories = [
                 level: 'medium'
             },
             {
-                question: 'What was the shortesst Formula 1 race?',
+                question: 'What was the shortest Formula 1 race?',
                 answers: ['1991 Australian Grand Prix', '1975 Spanish Grand Prix', '2009 Malaysia Grand Prix', '2021 Belgian Grand Prix'],
                 correct: '2021 Belgian Grand Prix', 
                 level: 'sort of difficult'
@@ -137,27 +137,22 @@ function addCategory(category) {
     gamef1.append(column);
 
     category.questions.forEach(question => {
-        document.createElement('div');
-        card.classList.add(card);
-        column.append('card');
+        const card = document.createElement('div'); // Corrected this line
+        card.classList.add('card');
+        column.append(card); // Append the actual card element, not a string
 
         if (question.level === 'easy') {
-            card.innerHTML = 100
+            card.innerHTML = 100;
+        } else if (question.level === 'medium') {
+            card.innerHTML = 200;
+        } else if (question.level === 'sort of difficult') {
+            card.innerHTML = 300;
+        } else if (question.level === 'hard') {
+            card.innerHTML = 400;
         }
-       
-        if (question.level === 'medium') {
-            card.innerHTML = 200
-        }
-        
-        if (question.level === 'sort of difficult') {
-            card.innerHTML = 300
-        }
-        
-        if (question.level === 'hard') {
-            card.innerHTML = 400
-        }
-    })
+    });
 
+        card.setAttribute('data-question', question.question);
     
 };
 

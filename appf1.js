@@ -18,7 +18,7 @@ const jeopardyCategories = [
                 level: 'medium'
             },
             {
-                question: 'Max Verstappen and which other driver were the first ever to set identical qualifying lap times in q3a? (hint: it was this year)',
+                question: 'Max Verstappen and which other driver were the first ever to set identical qualifying lap times in q3? (hint: it was this year)',
                 answers: ['Lando Norris', 'George Russell', 'Lewis Hamilton', 'Charles Leclerc'],
                 correct: 'George Russell',
                 level: 'sort of difficult'

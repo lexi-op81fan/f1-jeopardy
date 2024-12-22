@@ -136,24 +136,27 @@ function addCategory(category) {
     column.append(genreTitle);
     gamef1.append(column);
 
-    category.questions.forEach(question => {
+    category.questions.forEach(q => {
         const card = document.createElement('div'); // Corrected this line
         card.classList.add('card');
         column.append(card); // Append the actual card element, not a string
 
-        if (question.level === 'easy') {
-            card.innerHTML = 100;
-        } else if (question.level === 'medium') {
-            card.innerHTML = 200;
-        } else if (question.level === 'sort of difficult') {
-            card.innerHTML = 300;
-        } else if (question.level === 'hard') {
-            card.innerHTML = 400;
+        if (q.level === 'easy') {
+            card.InnerHTML = 100;
+        } else if (q.level === 'medium') {
+            card.InnerHTML = 200;
+        } else if (q.level === 'sort of difficult') {
+            card.InnerHTML = 300;
+        } else if (q.level === 'hard') {
+            card.InnerHTML = 400;
         }
+        
+        card.setAttribute('data-question', q.question);
+        card.setAttribute('data-answers-1', q.answers[0]);
+        card.setAttribute('data-answers-1', q.answers[1]);
+        card.setAttribute('data-correct', q.correct);
+        card.setAttribute('data-value', card.getInnerHTML());
     });
-
-        card.setAttribute('data-question', question.question);
-    
 };
 
-jeopardyCategories.forEach(category => addCategory(category))
+jeopardyCategories.forEach(category => addCategory(category));

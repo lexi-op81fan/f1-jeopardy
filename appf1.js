@@ -16,7 +16,7 @@ const jeopardyCategories = [
                 answers: ['Michael Schumacher', 'Lewis Hamilton', 'Damon Hill', 'Fernando Alonso'],
                 correct: 'Lewis Hamilton',
                 level: 'medium'
-            },
+            },gr
             {
                 question: 'Max Verstappen and which other driver were the first ever to set identical qualifying lap times in q3? (hint: it was this year)',
                 answers: ['Lando Norris', 'George Russell', 'Lewis Hamilton', 'Charles Leclerc'],
@@ -142,20 +142,20 @@ function addCategory(category) {
         column.append(card); // Append the actual card element, not a string
 
         if (q.level === 'easy') {
-            card.InnerHTML = 100;
+            card.innerText = 100;
         } else if (q.level === 'medium') {
-            card.InnerHTML = 200;
+            card.innerText = 200;
         } else if (q.level === 'sort of difficult') {
-            card.InnerHTML = 300;
+            card.innerText = 300;
         } else if (q.level === 'hard') {
-            card.InnerHTML = 400;
+            card.innerText = 400;
         }
         
         card.setAttribute('data-question', q.question);
         card.setAttribute('data-answers-1', q.answers[0]);
         card.setAttribute('data-answers-1', q.answers[1]);
-        card.setAttribute('data-correct', q.correct);
-        card.setAttribute('data-value', card.getInnerHTML());
+        card.setAttribute('data-correct', q.correct);h
+        card.setAttribute('data-value', card.getText());
     });
 };
 
